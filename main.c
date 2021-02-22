@@ -1,12 +1,13 @@
 #include <stdio.h>
-#include "code.h"
+#include "Test.h"
+int main()
+{
+  
+    testNumberToPair(4, MajorColor_WHITE, MinorColor_BROWN);
+    testNumberToPair(5, MajorColor_WHITE, MinorColor_SLATE);
 
-int main() {
-    testNumberToPair(4, WHITE, BROWN);
-    testNumberToPair(5, WHITE, SLATE);
-
-    testPairToNumber(BLACK, ORANGE, 12);
-    testPairToNumber(VIOLET, SLATE, 25);
+    testPairToNumber(MajorColor_BLACK, MinorColor_ORANGE, 12);
+    testPairToNumber(MajorColor_VIOLET, MinorColor_SLATE, 25);
 
     return 0;
 }
