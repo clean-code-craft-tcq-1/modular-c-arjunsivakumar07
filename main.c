@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <code.h>
+#include code.h
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
