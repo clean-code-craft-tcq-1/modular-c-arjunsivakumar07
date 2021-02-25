@@ -12,14 +12,14 @@ ColorPair GetColorFromPairNumber(int pairNumber)
 {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
-    colorPair.majorColor = (MajorColor_tst)(zeroBasedPairNumber / MinorColor_TotalNumber);
-    colorPair.minorColor = (MinorColor_tst)(zeroBasedPairNumber % MinorColor_TotalNumber);
+    colorPair.majorColor = (MajorColor_tst)(zeroBasedPairNumber / Minor_TotalNumber);
+    colorPair.minorColor = (MinorColor_tst)(zeroBasedPairNumber % Minor_TotalNumber);
     return colorPair;
 }
 
 int GetPairNumberFromColor(const ColorPair* colorPair)
 {
     int PairNumber;
-    PairNumber = (colorPair->majorColor * MinorColor_TotalNumber) + (colorPair->minorColor) + 1;
+    PairNumber = (colorPair->majorColor * Minor_TotalNumber) + (colorPair->minorColor) + 1;
     return PairNumber;
 }
